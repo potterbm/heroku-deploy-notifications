@@ -1,0 +1,25 @@
+# ctags from vim
+tags
+
+# vim temps
+*.swp
+*.swo
+*.swn
+*.swm
+*.swl
+*.swk
+*.sw*
+
+# Mac hidden files
+.DS_Store
+
+# node modules
+node_modules
+
+# build output
+dist
+
+npm-debug.log
+
+# VSCode
+.vscode
