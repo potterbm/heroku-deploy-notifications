@@ -14,14 +14,7 @@ const operationAliases = {
   unsubscribe : 'unsubscribe',
 };
 
-/*
-OAuth Access Token: xoxp-4591011438-596069231249-634138549239-75ff905c3cbdada6e68e70fd0211c2ef
-Bot User OAuth Access Token: xoxb-4591011438-620883202610-jKdBzlkw8EpbOdUJ9IeBI8KW
-*/
-
 module.exports = async (context, next) => {
-  // console.log('raw request', context.request.body);
-
   if (context.request.path !== '/slack') return await next();
 
   if (context.request.body.type === 'url_verification') {
